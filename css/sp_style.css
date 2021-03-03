@@ -1,0 +1,509 @@
+
+@media screen and (max-width: 640px) {
+  
+
+
+/*  -------- 共通エリア　---------　　*/
+
+
+html {
+  font-size: 6.25%;
+}
+
+#wrap{
+  width: 100%;
+  height: auto;
+}
+body {
+  font-size: 14em;
+  font-family: 'Arial',YuGothic,'Yu Gothic','Hiragino Kaku Gothic ProN','ヒラギノ角ゴ ProN W3','メイリオ', Meiryo,'ＭＳ ゴシック',sans-serif;
+}
+
+
+h1 {
+  font-size: 28rem;
+}
+
+h2 {
+  font-size: 23rem;
+}
+
+p {
+  font-size: 15rem;
+  color: #525252;
+}
+
+#wrap {
+  width: 100%;
+}
+
+.wrap_common {
+  width: 90%;
+  margin: 0 auto;
+  position: relative;
+}
+
+section {
+  width: 100%;
+  margin-top: 70px;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
+.in_wrap{
+  width: 100%;
+}
+
+
+/*---------main-------*/
+
+main {
+  width: 100%;
+     height: 100vh;
+
+}
+
+#navigation{
+/*
+    width: 100%;
+    height: 60px;
+    background-color:rgba(255,255,255,0.3);
+*/
+    display: none;
+}
+
+.nav_flex {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  justify-content:flex-end;
+}
+
+.nav_wrap{
+/*    display: flex;*/
+/*margin: 0 auto;s*/
+  display: none;
+}
+
+.nav_wrap a{
+   color: #000;
+}
+.nav_wrap li {
+  line-height: 60px;
+  margin-right: 50px;
+  letter-spacing: 3px;
+}
+.nav_wrap li:last-child {
+  margin-right: 0;
+}
+
+
+h1{
+  line-height:1;
+  color: #fff;
+  background: linear-gradient(transparent 70%, #6bbaa7 70%);
+    display: inline-block;
+  position: relative;
+  top: 300px;
+  font-size: 50px;
+/*  left: 5%;*/
+/*    vertical-align: middle;*/
+    
+    
+    
+    
+}
+  
+  /*menu*/
+  
+    #sp_nav{
+        display: block;
+    }
+    
+/*
+#sp_navigaion {
+    overflow: hidden;
+    position: relative;
+    transform: translateX(-300px);
+    height: 100%;
+    width: 400px;
+    transition: all 800ms cubic-bezier(.8, 0, .33, 1);
+    border-radius: 0% 0% 100% 50%;
+}
+
+.sp_navigaion.nav-open {
+    transform: translateX(0px);
+    border-radius: 0% 0% 0% 0%;
+   background: rgba(255, 255, 255, 0.6);
+}
+*/
+
+  .nav-links img{
+    width: 60px;
+  }
+nav .menu-btn {
+    position: absolute;
+    top: 15px;
+    right:10px;
+    padding: 0;
+    width: 30px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+nav .menu-btn .line {
+    padding: 0;
+    width: 30px;
+    background: #002d40;
+    height: 2px;
+    margin: 5px 0;
+    transition: all 700ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .menu-btn .line.line--1 {
+    width: 30px;
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--1.line-cross {
+    width: 30px;
+    transform: rotate(45deg) translateY(10px);
+/*   background: rgba(0,0,0,0.6);*/
+}
+
+nav .menu-btn .line.line--2 {
+    width: 28px;
+    transform: translateX(0);
+}
+
+nav .menu-btn .line.line--2.line-fade-out {
+    width: 28px;
+    transform: translate(30px);
+    opacity: 0;
+}
+
+nav .menu-btn .line.line--3 {
+    width: 20px;
+    transform: rotate(0) translateY(0);
+}
+
+nav .menu-btn .line.line--3.line-cross {
+    width: 30px;
+    transform: rotate(-45deg) translateY(-10px);
+/*   background: rgba(0,0,0,0.6);*/
+ 
+}
+
+nav .nav-links {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-100px);
+    opacity: 0;
+    transition: all 900ms cubic-bezier(.9, 0, .33, 1);
+      background: rgba(0,0,0,0.9);
+}
+
+nav .nav-links.fade-in {
+    opacity: 1;
+    transform: translateX(0px);
+    z-index: 1;
+} 
+
+nav .nav-links .link {
+    margin: 20px 0;
+    text-decoration: none;
+    font-family: sans-serif;
+        color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    transition: all 300ms cubic-bezier(.9, 0, .33, 1);
+}
+
+nav .nav-links .link:hover {
+/*    color: rgba(0, 0, 0, .5);*/
+}
+
+
+
+ 
+/*---------------section 1------------*/
+
+
+.in_wrap{
+ line-height: 2;
+}
+
+.tittle_text{
+  padding: 0.5em;/*文字周りの余白*/
+  color: #494949;/*文字色*/
+  background: #d8e8e8;/*背景色*/
+  border-left: solid 5px #002d40;/*左線（実線 太さ 色）*/
+  margin-bottom: 20px;
+}
+
+  #logo_img{
+    text-align: center;
+    margin: 0 auto;
+  }
+  #logo_img > img{
+    margin: 0 auto; 
+    text-align: center;
+  }
+  
+  #logo_img{
+    margin-bottom: 20px;
+  }
+/*---------------- section 2-------------*/
+
+
+
+.in_wrap_o{
+  width: 100%;
+}
+
+.sol_img{
+  width: 95%;
+  height: 300px;
+  margin: 0 auto;
+}
+
+.sol_txt{
+  width: 75%;
+/*  height: 200px;*/
+  background-color: #fff;
+  margin: 0 auto;
+  position: relative;
+  top: -80px;
+  padding: 10px 15px;
+  word-break: break-all;
+}
+
+.text_tittle{
+  letter-spacing: 5px;
+  text-align: center;
+  padding: 20px;
+    font-family: Rockwell, "Courier Bold", Courier, Georgia, Times, "Times New Roman", serif;
+  color: #002d40;
+  padding-top: 50px;
+}
+.bakcol_f3{
+  background-color: #f3f3f3;
+}
+
+
+.in_txt{
+/* text-align: center;*/
+    padding: 0.2em;/*上下 左右の余白*/
+  color: #494949;/*文字色*/
+/*  background: transparent;背景透明に*/
+  border-left: solid 5px #002d40;/*左線*/
+
+}
+
+
+.text_orient{
+  line-height: 1.5;
+  overflow: hidden;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:3;
+  margin: 15px 0;
+}
+
+
+.button {
+  width: 75px;
+  position: relative;
+  display: block;
+  padding: .7em 3em;
+  background-color: #002d40;
+  border: 2px solid #002d40;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  transition: all .3s;
+  margin: 0 auto;
+  font-size: 12px;
+}
+.button::after {
+  position: absolute;
+  top: 50%;
+  right: .2em;
+  content: '';
+  margin-top: -5px;
+  border: 7px solid transparent;
+  border-top-width: 5px;
+  border-bottom-width: 5px;
+  border-left-color: #fff;
+  transition: all .3s;
+}
+.button:hover {
+  background-color: #fff;
+  color: #333;
+}
+.button:hover::after {
+  border-left-color: #333;
+}
+
+
+
+
+/*-----------section 3----------------*/
+
+
+
+.contact_wrap{  
+  background-color: #d9ecf2;
+  margin-top: 0;
+  padding: 70px 0;
+  padding-top: 50px;
+}
+
+.contact_wrap h3{
+  text-align: center;
+  color: #002d40;
+  padding: 40px 0;
+  letter-spacing: 3px;
+  font-size: 20px;
+}
+.contact_wrap p{
+  text-align: center;
+  color: #002d40;
+}
+
+
+.btn{
+  color:#454545;
+  background:transparent;
+  border-width:2px;
+  border-style: solid;
+  border-color:#454545;
+  position:relative;
+  margin:1em;
+  display:inline-block;
+  padding:0.5em 1em;
+  transition:all 0.3s ease-in-out;
+  text-align:center;
+font-family:comfortaa;
+  font-weight:bold;
+  letter-spacing: 6px;
+  font-size: 25px;
+    cursor: pointer;
+}
+
+
+
+.btn:before, .btn:after{
+  content:'';
+  display:block;
+  position:absolute;
+  border-color:#454545;
+  box-sizing:border-box;
+  border-style:solid;
+  width:1em;
+  height:1em;
+  transition:all 0.3s ease-in-out;
+  
+}
+
+.btn:before {
+  top:-6px;
+  left:-6px;
+  border-width:2px 0 0 2px;
+  z-index:5;
+}
+
+button:after {
+  bottom:-6px;
+  right:-6px;
+  border-width:0 2px 2px 0;
+}
+
+.btn:hover:before, .btn:hover:after{
+  width:calc(100% + 12px);
+  height:calc(100% + 12px);
+  border-color:#002d40;
+}
+
+.btn:hover {
+  color:#fff;
+  background-color:#002d40;
+  border-color:#002d40;
+}
+.panel {
+  max-width:960px;
+  text-align:center;
+  position:relative;
+  margin:auto;
+  display: block;
+/* cursor: pointer;*/
+}
+
+
+/*-----------footer-----------------*/
+
+
+footer{
+  width: 100%;
+  background-color: #002d40;
+  text-align: center;
+ 
+}
+
+footer p{
+    color: #fff;
+  font-size: 12px;
+  padding: 5px;
+}
+
+
+
+    
+/*    company page*/
+    
+    .company_page{
+        height: 400px;
+    }
+    .overview-detail{
+    padding: 70px 0;
+}
+    .overview-detail__table{
+    width: 100%;
+    line-height: 2;
+/*  font-size: 1.7rem;*/
+  text-align: left;
+    margin: 0 auto;
+　 font-weight: 100;
+/*    text-align: center;*/
+}
+    
+    .w50-sp90{
+    width: 90%;
+}
+
+    
+/*    web*/
+    
+    .service_pg{
+    width: 100% !important;
+}
+    .btn-pg{
+    width: 150px !important;
+}
+    
+  
+}
